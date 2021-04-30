@@ -1,0 +1,15 @@
+.banner {
+    position: relative;
+    height: 450px;
+    color: black;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+.banner>img{
+    width: 100%;
+    
+}
+
+.nav > ul > li {
+    list-style: none;
+}
