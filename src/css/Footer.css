@@ -1,0 +1,65 @@
+footer {
+    background-color: #EFF7FA;
+    position: relative;
+    padding: 3rem;
+}
+.footer__container{
+    background-color: #EFF7FA;
+    border-top: 1px solid gray;
+}
+.footer__BacktoTop {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    background: #EFF7FA;
+    border-radius: 99px;
+    font-size: 1.5rem;
+    display: grid;
+    place-items: center;
+    top: -2rem;
+    left: calc(50% - 2rem);
+    box-shadow: 0 0.5rem 0.5rem rgb(0 0 0 / 5%);
+    transition: all .2s;
+    transform: scale(.95);
+    
+}
+
+.footer__BacktoTop:hover{
+    transition: all .2s;
+    transform: scale(.85);
+    background-color: lightblue;
+}
+.footer__BacktoTop>svg--active{
+    color: white;
+    transition: all .1s;
+}
+.footer__row1 {
+    margin-bottom: 1%;
+}
+
+.footer__row1>span {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 800;
+    color: royalblue;
+    overflow: hidden;
+    background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+    background-clip: text;
+    background-size: 200% 100%;
+    background-position: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background 275ms ease;
+}
+
+.footer__row1>span:hover {
+    background-position: 0 100%;
+}
+
+.git__logo {
+    height: 24px;
+    width: 24px;
+    cursor: help;
+    color: #fff;
+}
