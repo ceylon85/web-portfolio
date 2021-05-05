@@ -2,20 +2,21 @@ import React, { useState } from "react";
 import { Zoom } from "react-reveal";
 import ReactLoading from "react-loading";
 import emailjs from "emailjs-com";
+import apiKeys from "./apikeys";
 
 import "./css/Contact.css";
 
-const Contact = () => {
+function Contact() {
   const [isLoading, setIsLoading] = useState(false);
   const [messageSent, setMessageSent] = useState(false);
-  const [userName, setUserName] = useState();
-  const [userEmail, setUserEmail] = useState();
-  const [userMessage, setUserMessage] = useState();
+  const [userName, setUserName] = useState("");
+  const [userEmail, setUserEmail] = useState("");
+  const [userMessage, setUserMessage] = useState("");
   const [missingName, setMissingName] = useState(false);
   const [missingEmail, setMissingEmail] = useState(false);
   const [missingMessage, setMissingMessage] = useState(false);
 
-  const formSubmit = (e) => {
+  const onSubmit = (e) => {
     e.preventDefault();
     if (!userName || userName === "") {
       setMissingName(true);
@@ -35,11 +36,11 @@ const Contact = () => {
       userMessage !== ""
     ) {
       setIsLoading(true);
-      emailjs
-        .sendForm("gmail", "portfolio", e.target, "user_uAVob3QYnNs3pPIR9EHKG")
-        .then(
-          () => {
-            setMessageSent(true);
+      emailjs.sendForm("gmail", apiKeys.TEMPLATE_ID, e.target, apiKeys.USER_ID)
+      .then(
+          (result) => {
+            alert("메세지를 보냈습니다, 빠른 시간 안에 회신하겠습니다!");
+            console.log(result.text)
           },
           (error) => {
             console.log(error.text);
@@ -51,12 +52,13 @@ const Contact = () => {
         .then(() => {
           setMessageSent(true);
           setIsLoading(false);
-          setUserName();
-          setUserEmail();
-          setUserMessage();
+          setUserName("");
+          setUserEmail("");
+          setUserMessage("");
         });
     }
   };
+
   return (
     <div id="contactSection" className="section contact-section">
       <div className="title contact-title">
@@ -70,10 +72,8 @@ const Contact = () => {
         {!messageSent ? (
           <Zoom>
             <h3>
-            아래 양식을 작성하거나 다음의 이메일로 연락바랍니다.{" "}
-              <a href="canleez123@gmail.com">
-                canleez123@gmail.com
-              </a>{" "}
+              아래 양식을 작성하거나 다음의 이메일로 연락바랍니다.{" "}
+              <a href="canleez123@gmail.com">canleez123@gmail.com</a>{" "}
             </h3>
           </Zoom>
         ) : (
@@ -91,14 +91,14 @@ const Contact = () => {
       {!messageSent && (
         <div className="contact-form__container">
           <Zoom>
-            <form className="contact-form" onSubmit={(e) => formSubmit(e)}>
+            <form className="contact-form" onSubmit={(e) => onSubmit(e)}>
               <div className="name-email-input__container">
                 <div className="name-input__container">
                   <input
                     className={missingName && "missing-input"}
                     type="text"
                     placeholder="Your name"
-                    name="user_name"
+                    name="from_name"
                     onChange={(e) => {
                       setUserName(e.target.value);
                       setMissingName(false);
@@ -115,7 +115,7 @@ const Contact = () => {
                     className={missingEmail && "missing-input"}
                     type="email"
                     placeholder="Your@email.com"
-                    name="user_email"
+                    name="email"
                     onChange={(e) => {
                       setUserEmail(e.target.value);
                       setMissingEmail(false);
@@ -132,7 +132,7 @@ const Contact = () => {
                 <textarea
                   className={missingMessage && "missing-textarea"}
                   placeholder="Your message"
-                  name="user_message"
+                  name="message"
                   onChange={(e) => {
                     setUserMessage(e.target.value);
                     setMissingMessage(false);
@@ -163,6 +163,6 @@ const Contact = () => {
       )}
     </div>
   );
-};
+}
 
 export default Contact;

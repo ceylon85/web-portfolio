@@ -27,7 +27,7 @@ function Footer() {
           <span>Copyright &copy; 2021</span>
           <a
             className="git__logo"
-            href="https://github.com/ceylon85/react-amazon-clone"
+            href="https://github.com/ceylon85/web-portfolio"
           >
             <span>
               <img
