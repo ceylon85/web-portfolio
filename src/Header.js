@@ -1,4 +1,6 @@
 import React from 'react'
+import './css/Header.css';
+
 import TypeWriter from "react-typewriter";
 
 function Header() {
