@@ -11,19 +11,15 @@ function Intro() {
           <Zoom>
             <h1>A little bit about myself</h1>
             <p>
-              Argentina as an Account Delivery Executive, and coding on my spare
-              time!
+             Lorem ipsum dolor sit amet consectetur, adipisicing elit.  
             </p>
             <p>
-              I've been doing web development as a hobby for the past few years,
-              but I now want to make a career out of it to continue learning and
-              growing.
+            Corrupti odit expedita, aliquid voluptatibus quos cupiditate,
             </p>
             <p>
-              I am a well-organized person, a problem solver, a fast-learner and
-              a teamworker with high attention to detail.
+            necessitatibus obcaecati sequi minus tempora, iure impedit placeat dolore nihil dignissimos cumque veniam quod sed.
             </p>
-            <p>I love golf and soccer. I don't like chocolate.</p>
+            <p>I love baseball and soccer. I don't like lazy.</p>
           </Zoom>
         </div>
         <div className="intro__image">
