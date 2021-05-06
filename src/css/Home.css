@@ -1,0 +1,112 @@
+/* #home >img {
+    height: 600px;    
+    min-height: 500px;
+    width: 100%;
+    } */
+.homeSection {
+    min-height: 580px;
+    height: 90vh;
+    max-height: 1100px;
+    position: relative;
+    width: 100%;
+    background: #deedf3;
+    padding: 0;
+    padding-top: 68px;
+    text-align: center;
+}
+
+.home__title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 80%;
+}
+
+.home__title h1 {
+    font-size: 3.2rem;
+    color: #104C91;
+    margin-top: 0;
+    line-height: 4rem;
+}
+
+.home__title h4 {
+    font-size: 1.5rem;
+    color: gray;
+    line-height: 2.5rem;
+}
+
+.scroll__Icon__container {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.scroll__Icon__container svg {
+    color: gray;
+    font-size: 22px;
+    transition: all .5s ease;
+    margin-top: 4px;
+}
+
+.scroll__Icon__container:hover svg {
+    color: #104C91;
+}
+
+.scroll__Icon__container .mouse__Icon {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.scroll__Icon__container:hover .mouse__Icon {
+    animation-name: bounce;
+}
+
+.scroll__Icon__container .downArrows__Icon {
+    margin-left: 1px;
+}
+
+@keyframes bounce {
+    0%, 100%, 20%, 50%, 80% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px)
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px)
+    }
+}
+
+@media(max-width: 491px) {
+    .home__title h1 {
+        font-size: 3.2rem;
+        line-height: 5rem;
+    }
+    .home__title h4 {
+        font-size: 1.1rem;
+        line-height: 2.2rem;
+    }
+    .scroll__Icon__container {
+        bottom: 10px;
+    }
+}
+
+@media(max-width: 288px) {
+    .homeSection {
+        height: 650px;
+    }
+}

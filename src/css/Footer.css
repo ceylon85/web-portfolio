@@ -48,7 +48,7 @@ footer {
     font-weight: 800;
     color: royalblue;
     overflow: hidden;
-    background: linear-gradient(to right, #2c4057, #7ac1df 50%, gray 50%);
+    background: linear-gradient(to right, #2c4057, #7ac1df 50%, #104C91 50%);
     background-clip: text;
     background-size: 200% 100%;
     background-position: 100%;
@@ -65,7 +65,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: gray;
+    color: #104C91;
 }
 
 .footer__row2>span {

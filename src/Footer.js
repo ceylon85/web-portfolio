@@ -33,7 +33,7 @@ function Footer() {
           <a className="footer__BacktoTop" title="Back to Top" href="#home">
             <FontAwesomeIcon
               icon={faAngleDoubleUp}
-              color="gray"
+              color="#104C91"
               size="lg"
               className="fupIcon--active"
             />
