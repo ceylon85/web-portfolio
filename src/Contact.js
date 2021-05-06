@@ -60,8 +60,8 @@ function Contact() {
   };
 
   return (
-    <div id="contactSection" className="section contact-section">
-      <div className="title contact-title">
+    <div id="contactSection" className="section contactSection">
+      <div className="title contact__title">
         {!messageSent ? (
           <Zoom>
             <h1>Let's talk!</h1>
@@ -80,7 +80,7 @@ function Contact() {
           <>
             <h3>감사합니다! 빠른 시간 안에 회신하겠습니다.!</h3>
             <p
-              className="send-another-message"
+              className="sendAnother__message"
               onClick={() => setMessageSent(false)}
             >
               다른 메세지를 보내시겠습니까?
@@ -89,13 +89,13 @@ function Contact() {
         )}
       </div>
       {!messageSent && (
-        <div className="contact-form__container">
+        <div className="contactForm__container">
           <Zoom>
-            <form className="contact-form" onSubmit={(e) => onSubmit(e)}>
-              <div className="name-email-input__container">
-                <div className="name-input__container">
+            <form className="contactForm" onSubmit={(e) => onSubmit(e)}>
+              <div className="nameEmail__input__container">
+                <div className="name__input__container">
                   <input
-                    className={missingName && "missing-input"}
+                    className={missingName && "missingInput"}
                     type="text"
                     placeholder="Your name"
                     name="from_name"
@@ -105,12 +105,12 @@ function Contact() {
                     }}
                   />
                   {missingName && (
-                    <p className="required-input-message">
+                    <p className="required__input__message">
                       이름을 작성해주세요!
                     </p>
                   )}
                 </div>
-                <div className="email-input__container">
+                <div className="email__input__container">
                   <input
                     className={missingEmail && "missing-input"}
                     type="email"
@@ -122,15 +122,15 @@ function Contact() {
                     }}
                   />
                   {missingEmail && (
-                    <p className="required-input-message">
+                    <p className="required__input__message">
                       Email을 작성해주세요!!
                     </p>
                   )}
                 </div>
               </div>
-              <div className="message-input__container">
+              <div className="message__input__container">
                 <textarea
-                  className={missingMessage && "missing-textarea"}
+                  className={missingMessage && "missingTextarea"}
                   placeholder="Your message"
                   name="message"
                   onChange={(e) => {
@@ -139,14 +139,14 @@ function Contact() {
                   }}
                 />
                 {missingMessage && (
-                  <p className="required-input-message">
+                  <p className="required__input__message">
                     메세지를 작성해주세요!!
                   </p>
                 )}
               </div>
-              <div className="send-btn__container">
+              <div className="sendBtn__container">
                 {isLoading && (
-                  <div className="loading-spinner__container">
+                  <div className="loading__spinner__container">
                     <ReactLoading
                       type={"spin"}
                       color={"#fff"}
@@ -155,7 +155,7 @@ function Contact() {
                     />
                   </div>
                 )}
-                {!isLoading && <button className="send-btn">Send</button>}
+                {!isLoading && <button className="sendBtn">Send</button>}
               </div>
             </form>
           </Zoom>

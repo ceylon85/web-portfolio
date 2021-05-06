@@ -1,20 +1,19 @@
 footer {
-    background-color: #EFF7FA;
+    background-color: #deedf3;
     position: relative;
-    padding: 3rem;
-    border-top: none;
-}
-
-.footer__container {
-    background-color: #EFF7FA;
+    padding: 3.5rem;
     border-top: 1px solid white;
 }
 
+.footer__container {
+    background-color: #deedf3;
+}
+
 .footer__BacktoTop {
-    position: relative;
+    position: absolute;
     width: 4rem;
     height: 4rem;
-    background: #EFF7FA;
+    background: #deedf3;
     border-radius: 99px;
     font-size: 1.5rem;
     display: grid;
@@ -29,7 +28,7 @@ footer {
 .footer__BacktoTop:hover{
     transition: all .2s;
     transform: scale(.85);
-    background-color: lightblue;
+    background-color: #c1d9e2;
 }
 .footer__BacktoTop:hover>svg {
     color: black;
@@ -39,6 +38,7 @@ footer {
 
 .footer__row1 {
     margin-bottom: 1%;
+    padding-bottom: 1rem;
 }
 
 .footer__row1>span {
@@ -48,7 +48,7 @@ footer {
     font-weight: 800;
     color: royalblue;
     overflow: hidden;
-    background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+    background: linear-gradient(to right, #2c4057, #7ac1df 50%, gray 50%);
     background-clip: text;
     background-size: 200% 100%;
     background-position: 100%;
