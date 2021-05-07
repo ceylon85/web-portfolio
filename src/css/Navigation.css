@@ -6,6 +6,10 @@
     height: 68px;
     z-index: 1000;
 }
+.nav__show {
+    display: none;
+    background-color: #C5C6C7;
+}
 
 .navbar__container {
     width: 80%;
@@ -46,6 +50,7 @@
     background: #fff;
     color: #104C91;
     border: 1px solid #fff;
+    list-style: underline;
 }
 
 #nav__wrap>a.mobile-btn {

@@ -1,12 +1,26 @@
-import React from 'react'
+import React,{useEffect, useState} from 'react'
 import './css/Navigation.css'
 import {Link} from 'react-scroll';
 
 function Navigation() {
+    const [show, setShow] = useState(false);
+
+    const transitionNavBar = () => {
+        if (window.scrollY < 200 || window.scrollY >600) {
+          setShow(false);
+        } else {
+          setShow(true);
+        }
+      };
+    useEffect(() => {
+        window.addEventListener("scroll", transitionNavBar);
+        return () => window.removeEventListener("scroll", transitionNavBar);
+      }, []);
+
     return (
-        <nav className="navbar">
-            <div className="navbar__container">
-                <div className="navbar__nav">
+        <nav className={`navbar ${show && "nav__show"}`}>
+            <div className="navbar__container" id="nav">
+                <div className="navbar__nav" >
                     <Link
                         to="homeSection"
                         spy={true}
@@ -30,7 +44,7 @@ function Navigation() {
                     <Link
                         className="navbar__Project"
                         activeClass="active"
-                        to="workSection"
+                        to="projectSection"
                         spy={true}
                         smooth={true}
                         offset={0}

@@ -3,7 +3,7 @@ import './css/Project.css';
 
 function Project() {
     return (
-        <div>
+        <div className="projectSection">
                 프로젝트
         </div>
     )

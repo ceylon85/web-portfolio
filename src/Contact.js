@@ -112,7 +112,7 @@ function Contact() {
                 </div>
                 <div className="email__input__container">
                   <input
-                    className={missingEmail && "missing-input"}
+                    className={missingEmail && "missingInput"}
                     type="email"
                     placeholder="Your@email.com"
                     name="email"
