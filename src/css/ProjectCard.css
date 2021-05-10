@@ -1,0 +1,93 @@
+.ProjectCard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+}
+
+.ProjectCard:hover {
+    transform: rotateY(180deg);
+}
+
+.ProjectCard__img {
+    width: 80%;
+    margin: auto;
+}
+
+.ProjectCard__img img {
+    width: 100%;
+    max-width: 190px;
+    margin-top: 5px;
+}
+
+.ProjectCard__front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.ProjectCard__title h3 {
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+.ProjectCard__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: #1F2833;
+    border-radius: 6px;
+}
+
+.ProjectCard__desc h5 {
+    margin: 0;
+    padding: 0 7px;
+    font-size: .85rem;
+}
+
+.ProjectCard__desc ul {
+    margin: 0;
+    font-size: .85rem;
+    list-style: none;
+    padding: 8px 4px 0 4px;
+}
+
+.ProjectCard__details {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ProjectCard__details a {
+    color: #66F6F1;
+    font-size: 1.4rem;
+}
+
+.link-to-site a {
+    text-decoration: none;
+}
+
+.link-to-site a:hover {
+    text-decoration: underline;
+}
+
+.link-to-github a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.link-to-github a:hover {
+    text-decoration: underline;
+}
+
+.link-to-github svg {
+    font-size: 28px;
+}
