@@ -1,4 +1,4 @@
-.ProjectCard {
+.projectCard {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -8,34 +8,35 @@
     border-radius: 6px;
 }
 
-.ProjectCard:hover {
+.projectCard:hover {
     transform: rotateY(180deg);
 }
 
-.ProjectCard__img {
-    width: 80%;
+.projectCard__img {
+    width: 90%;
     margin: auto;
+    border-bottom: 1px solid rgb(240, 236, 236);
 }
 
-.ProjectCard__img img {
+.projectCard__img img {
     width: 100%;
     max-width: 190px;
     margin-top: 5px;
 }
 
-.ProjectCard__front {
+.projectCard__front {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
 }
 
-.ProjectCard__title h3 {
-    margin-bottom: 4px;
-    margin-top: 0;
+.projectCard__title h3 {
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-.ProjectCard__back {
+.projectCard__back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -45,20 +46,23 @@
     border-radius: 6px;
 }
 
-.ProjectCard__desc h5 {
+.projectCard__subtitle h5 {
     margin: 0;
     padding: 0 7px;
-    font-size: .85rem;
+    font-size: .95rem;
 }
 
-.ProjectCard__desc ul {
+.projectCard__subtitle ul {
     margin: 0;
-    font-size: .85rem;
+    font-size: .92rem;
     list-style: none;
     padding: 8px 4px 0 4px;
 }
+.projectCard__subtitle li {
+    padding: 5px;
+}
 
-.ProjectCard__details {
+.projectCard__details {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -66,28 +70,28 @@
     align-items: center;
 }
 
-.ProjectCard__details a {
+.projectCard__details a {
     color: #66F6F1;
     font-size: 1.4rem;
 }
 
-.link-to-site a {
+.link__to__site a {
     text-decoration: none;
 }
 
-.link-to-site a:hover {
+.link__to__site a:hover {
     text-decoration: underline;
 }
 
-.link-to-github a {
+.link__to__github a {
     font-size: 14px;
     text-decoration: none;
 }
 
-.link-to-github a:hover {
+.link__to__github a:hover {
     text-decoration: underline;
 }
 
-.link-to-github svg {
+.link__to__github svg {
     font-size: 28px;
 }

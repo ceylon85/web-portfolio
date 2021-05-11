@@ -5,15 +5,15 @@ import "./css/ProjectCard.css";
 
 function ProjectCard(props) {
   return (
-    <div className="ProjectCard">
-      <div className="ProjectCard__front">
-        <div className="ProjectCard__img">
+    <div className="projectCard">
+      <div className="projectCard__front">
+        <div className="projectCard__img">
           <img src={props.img} alt={props.title} />
         </div>
-        <div className="ProjectCard__title">
+        <div className="projectCard__title">
           <h3>{props.title}</h3>
         </div>
-        <div className="ProjectCard__desc">
+        <div className="projectCard__subtitle">
           <h5>{props.subtitle}</h5>
           <ul>
             {props.details.map((detail) => {
@@ -22,14 +22,14 @@ function ProjectCard(props) {
           </ul>
         </div>
       </div>
-      <div className="ProjectCard__back">
-        <div className="ProjectCard__details">
-          <div className="link-to-site">
+      <div className="projectCard__back">
+        <div className="projectCard__details">
+          <div className="link__to__site">
             <a href={props.link} target="_blank" rel="noopener noreferrer">
-              Check it out!
+              Link to Site
             </a>
           </div>
-          <div className="link-to-github">
+          <div className="link__to__github">
             <a href={props.github} target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} />
               <br />
