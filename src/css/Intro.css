@@ -1,11 +1,14 @@
 .introSection{
-    background: #fff;
+    background: #45A29E;
     padding-top: 88px;
     padding-bottom: 88px;
+    text-align: center;
 }
 
 .introSection h1{
-    color: black;
+    color: #deedf3;
+     text-shadow: -.15rem .11rem black;
+    -webkit-text-stroke: 1px #deedf3;
 }
 
 .intro__container{
@@ -15,12 +18,13 @@
     justify-content: center;
     max-width: 1600px;
     margin: auto;
+    text-align: center;
 }
 
 .intro__1{
     text-align: left;
     width: 40%;
-    color: black;
+    color: #deedf3;
 }
 
 .introSection h1, .intro__container p{
@@ -29,6 +33,7 @@
 
 .intro__container p{
     line-height: 2.1rem;
+    font-weight: 600;
 }
 
 .intro__image{

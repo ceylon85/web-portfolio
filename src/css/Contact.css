@@ -1,12 +1,12 @@
 .contactSection{
-    background: white;
+    background: #45A29E;
     padding-bottom: 80px;
     padding-top: 28px;
 }
 
 .contact__title{
     padding-top: 62px;
-    color: #104C91;
+    color: #fff;
 }
 
 .contact__title h3{
@@ -16,7 +16,7 @@
 }
 
 .contact__title a{
-    color: #104C91;
+    color: #fff;
     text-decoration: none;
     font-weight: 600;
 }
@@ -57,13 +57,13 @@
     background: transparent;
     border: none;
     border-bottom: 2px solid #deedf3;
-    color: #104C91;
+    color: #fff;
     border-radius: 5px;
     font-size: 14px;
 }
 
 .name__input__container input::placeholder, .email__input__container input::placeholder, .message__input__container textarea::placeholder{
-    color: #104C91;
+    color: #fff;
 }
 
 .name__input__container input:focus, .email__input__container input:focus, .message__input__container textarea:focus{
@@ -91,8 +91,8 @@
 
 .sendBtn{
     background: transparent;
-    color: #104C91;
-    border: 1px solid #7ac1df;
+    color: #fff;
+    border: 1px solid #fff;
     border-radius: 6px;
     font-size: 16px;
     padding: 12px 25px;
@@ -102,7 +102,7 @@
 }
 
 .sendBtn:hover{
-    background: #deedf3;
+    background: #fff;
     color: gray;
 }
 

@@ -32,10 +32,12 @@
     margin-left: 8px;
     padding: 5px;
     transition: all .3s ease;
+    font-weight: 500;
+
 }
 
 .navbar__nav>a:hover {
-    color: #104C91;
+    color: #66fcf1;
 }
 
 .navbar__ContactBtn {
@@ -47,9 +49,9 @@
 }
 
 .navbar__ContactBtn:hover {
-    background: #fff;
-    color: #104C91;
-    border: 1px solid #fff;
+    background: #66fcf1;
+    color: black;
+    border: 1px solid #66fcf1;
     list-style: underline;
 }
 

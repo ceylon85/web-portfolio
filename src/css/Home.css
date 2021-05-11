@@ -1,15 +1,10 @@
-/* #home >img {
-    height: 600px;    
-    min-height: 500px;
-    width: 100%;
-    } */
 .homeSection {
     min-height: 580px;
     height: 90vh;
     max-height: 1100px;
     position: relative;
     width: 100%;
-    background: #deedf3;
+    background: #0b0c10;
     padding: 0;
     padding-top: 68px;
     text-align: center;
@@ -25,7 +20,7 @@
 
 .home__title h1 {
     font-size: 3.2rem;
-    color: #deedf3;
+    color: #66fcf1;
     margin-top: 0;
     line-height: 4rem;
     text-shadow: -.15rem .15rem black;
@@ -35,7 +30,7 @@
 
 .home__title h4 {
     font-size: 1.5rem;
-    color: gray;
+    color: #deedf3;
     line-height: 2.5rem;
 }
 
@@ -50,14 +45,14 @@
 }
 
 .scroll__Icon__container svg {
-    color: gray;
+    color: #deedf3;
     font-size: 22px;
     transition: all .5s ease;
     margin-top: 4px;
 }
 
 .scroll__Icon__container:hover svg {
-    color: #104C91;
+    color: #66fcf1;
 }
 
 .scroll__Icon__container .mouse__Icon {

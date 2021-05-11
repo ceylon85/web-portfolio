@@ -2,6 +2,7 @@ import React from "react";
 import "./css/Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleUp } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
@@ -20,11 +21,10 @@ function Footer() {
             href="https://github.com/ceylon85/web-portfolio"
           >
             <span>
-              <img
-                className="git__logoImg"
-                src="https://www.flaticon.com/svg/vstatic/svg/733/733609.svg?token=exp=1620280695~hmac=a4e68120a5e79f9ab36aa332e1d2cea6"
-                alt="git"
-                title="클릭하시면 github로 이동합니다"
+              <FontAwesomeIcon
+                icon={faGithub}
+                size="lg"
+                className="git__logo"
               />
             </span>
           </a>
@@ -33,7 +33,7 @@ function Footer() {
           <a className="footer__BacktoTop" title="Back to Top" href="#home">
             <FontAwesomeIcon
               icon={faAngleDoubleUp}
-              color="#104C91"
+              color="#45A29E"
               size="lg"
               className="fupIcon--active"
             />
