@@ -15,7 +15,7 @@
     padding-top: 18px;
 }
 
-.project__card__container {
+.projectCard__container {
     position: relative;
     width: 20%;
     min-width: 190px;
@@ -37,7 +37,7 @@
         flex-direction: column;
         margin-left: -8px;
     }
-    .project__card__container {
+    .projectCard__container {
         width: 50%;
     }
 }
