@@ -105,18 +105,7 @@ function Project() {
             />
           </Zoom>
         </div>
-        <div className="projectCard__container">
-          <Zoom>
-            <ProjectCard
-              title=""
-              img={""}
-              link=""
-              github=""
-              subtitle=""
-              details={[]}
-            />
-          </Zoom>
-        </div>
+       
       </div>
     </div>
   );
