@@ -1,5 +1,5 @@
 .homeSection {
-    min-height: 580px;
+    min-height: 500px;
     height: 90vh;
     max-height: 1100px;
     position: relative;
@@ -89,13 +89,13 @@
     }
 }
 
-@media(max-width: 491px) {
+@media(max-width: 480px) {
     .home__title h1 {
-        font-size: 3.2rem;
+        font-size: 2.3rem;
         line-height: 5rem;
     }
     .home__title h4 {
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 2.2rem;
     }
     .scroll__Icon__container {

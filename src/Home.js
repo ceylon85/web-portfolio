@@ -16,15 +16,15 @@ function Home() {
           <Zoom>
             <h1>
               <TypeWriter typing={0.5}>
-                hihiihi I`m SeungJun SeungJun
+                안녕하세요,<br />이승준입니다. 
+                
               </TypeWriter>
             </h1>
 
             <TypeWriter typing={1.2}>
               <h4>
-                I am a self-taught, passionate web developer seeking for a
-                change in my career to pursuit my passion: <br />
-                {"< "}Coding{" />"}
+              도전해보지 않으면, <br/>어디까지 현실로 만들 수 있을지 알 수 없다고 생각합니다.<br/>
+              <br/> 생활에 스며드는 서비스를 개발하는 개발자가 되겠습니다!
               </h4>
             </TypeWriter>
           </Zoom>

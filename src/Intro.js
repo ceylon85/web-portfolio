@@ -10,21 +10,22 @@ function Intro() {
         <div className="intro__1">
           <Zoom>
             <h1>A little bit about myself</h1>
+            <br />
+
             <p>
-             Lorem ipsum dolor sit amet consectetur, adipisicing elit.  
+              언제나 심플하고 효과적인 인터페이스와 깔끔한 디자인 구현을 목표로
+              하는 Front-End 개발자입니다.{" "}
             </p>
             <p>
-            Corrupti odit expedita, aliquid voluptatibus quos cupiditate,
+              개발자의 가치는 비즈니스 가치를 얼마나 잘 구현하는지에 따라 그
+              가치가 빛나고, 개발자의 성장은 자신의 실력과 노력, 그리고 좋은
+              동료들로 인해 더 성장할 수 있다고 믿습니다.{" "}
             </p>
-            <p>
-            necessitatibus obcaecati sequi minus tempora, iure impedit placeat dolore nihil dignissimos cumque veniam quod sed.
-            </p>
-            <p>I love baseball and soccer. I don't like lazy.</p>
           </Zoom>
         </div>
         <div className="intro__image">
           <Zoom>
-          <img src="" alt="My Profile" />
+            <img src="" alt="My Profile" />
 
             {/* <img src={ProfileImg} alt="My Profile" /> */}
           </Zoom>
