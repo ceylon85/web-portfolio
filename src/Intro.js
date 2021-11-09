@@ -1,7 +1,7 @@
 import React from "react";
 import "./css/Intro.css";
 import { Zoom } from "react-reveal";
-// import ProfileImg from './images/background';
+import ProfileImg from './images/myPhoto.png';
 
 function Intro() {
   return (
@@ -27,9 +27,7 @@ function Intro() {
         </div>
         <div className="intro__image">
           <Zoom>
-            <img src="" alt="My Profile" />
-
-            {/* <img src={ProfileImg} alt="My Profile" /> */}
+            <img src={ProfileImg} alt="My Profile" />
           </Zoom>
         </div>
       </div>

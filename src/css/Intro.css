@@ -14,7 +14,7 @@
 .intro__container{
     display: flex;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 1px;
     justify-content: center;
     max-width: 1600px;
     margin: auto;
@@ -37,12 +37,13 @@
 }
 
 .intro__image{
-    margin-left: 30px;
+    margin-left: 5px;
 }
 
 .intro__image > img{
-    border-radius: 50%;
-    width: 280px;
+    border-radius: 5%;
+    width: 120px;
+    height: 160px;
     margin-top: 28px;
 }
 
@@ -72,7 +73,7 @@
     }
 }
 
-@media(max-width: 431px){
+@media(max-width: 480px){
     .intro__image{
         width: 90%;
         margin: auto;
@@ -80,9 +81,17 @@
     }
 
     .intro__image > img{
-        border-radius: 50%;
-        width: 80%;
+        border-radius: 80%;
+        width: 25%;
+        height: 25%;
         margin: auto;
         margin-top: 28px;
+    }
+    .introSection h1 {
+        font-size: 1.5rem;
+    }
+    .intro__container p{
+        font-size: .8rem;
+        text-align: center;
     }
 }

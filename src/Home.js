@@ -21,14 +21,17 @@ function Home() {
                 이승준입니다.
               </TypeWriter>
             </h1>
+            <h3>
+              <TypeWriter typing={1.0}>MAKE A BETTER FUTURE</TypeWriter>
+            </h3>
 
             <TypeWriter typing={1.2}>
               <h4>
-               생활에 스며드는 서비스를 개발하는 개발자가 되겠습니다!  <br />
+                더 나은 미래를 만들기 위한 개발자가 되겠습니다 <br />
                 도전해보지 않으면, <br />
                 어디까지 현실로 만들 수 있을지 알 수 없다고 생각합니다.
                 <br />
-                느리지만, 꾸준하게 부족한 부분을 채우며 가겠습니다.
+                꾸준하게 부족한 부분을 채우며 가겠습니다.
               </h4>
             </TypeWriter>
           </Zoom>
