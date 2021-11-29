@@ -1,13 +1,13 @@
 .introSection{
     background: #45A29E;
-    padding-top: 88px;
-    padding-bottom: 88px;
+    padding-top: 120px;
+    padding-bottom: 100px;
     text-align: center;
 }
 
 .introSection h1{
     color: #deedf3;
-     text-shadow: -.15rem .11rem black;
+    text-shadow: -.15rem .11rem black;
     -webkit-text-stroke: 1px #deedf3;
 }
 
@@ -40,8 +40,8 @@
     margin-left: 5px;
 }
 
-.intro__image > img{
-    border-radius: 5%;
+.intro__image > div > img{
+    border-radius: 10%;
     width: 120px;
     height: 160px;
     margin-top: 28px;
@@ -61,7 +61,7 @@
     }
 }
 
-@media(max-width: 678px){
+@media(max-width: 680px){
     .intro__1{
         width: 70%;
         padding-top: 80px;
@@ -80,7 +80,7 @@
         text-align: center;
     }
 
-    .intro__image > img{
+    .intro__image > div > img{
         border-radius: 80%;
         width: 25%;
         height: 25%;

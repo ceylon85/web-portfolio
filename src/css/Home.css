@@ -27,10 +27,6 @@
     -webkit-text-stroke: 2px black;
     font-weight: 900;
 }
-.home__title h3 {
-    font-size: 2rem;
-    color: #a2c7d6;
-}
 
 .home__title h4 {
     font-size: 1.5rem;
@@ -93,6 +89,16 @@
     }
 }
 
+@media(max-width: 680px){
+    .home__title h1 {
+        font-size: 2.8rem;
+        line-height: 3rem;
+    }
+    .home__title h4 {
+        font-size: 1.3rem;
+        line-height: 2.8rem;
+    }
+}
 @media(max-width: 480px) {
     .home__title h1 {
         font-size: 2.5rem;

@@ -1,14 +1,14 @@
 import React from "react";
 import "./css/Skills.css";
 import SkillsCard from "./SkillsCard";
-import { Flip } from "react-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 function Skills() {
   return (
     <div className="skillSection">
-      <Flip bottom>
+      <Zoom>
         <SkillsCard />
-      </Flip>
+      </Zoom>
     </div>
   );
 }

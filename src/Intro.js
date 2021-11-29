@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/Intro.css";
-import { Zoom } from "react-reveal";
+import { Zoom } from "react-awesome-reveal";
 import ProfileImg from './images/myPhoto.png';
 
 function Intro() {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Zoom } from "react-reveal";
+import { Zoom } from "react-awesome-reveal";
 import ReactLoading from "react-loading";
 import emailjs from "emailjs-com";
 import apiKeys from "./apikeys";
@@ -95,7 +95,7 @@ function Contact() {
               <div className="nameEmail__input__container">
                 <div className="name__input__container">
                   <input
-                    className={missingName && "missingInput"}
+                    className={missingName ? "missingInput": undefined}
                     type="text"
                     placeholder="Your name"
                     name="from_name"
@@ -112,7 +112,7 @@ function Contact() {
                 </div>
                 <div className="email__input__container">
                   <input
-                    className={missingEmail && "missingInput"}
+                    className={missingEmail ? "missingInput": undefined}
                     type="email"
                     placeholder="Your@email.com"
                     name="email"
@@ -130,7 +130,7 @@ function Contact() {
               </div>
               <div className="message__input__container">
                 <textarea
-                  className={missingMessage && "missingTextarea"}
+                  className={missingMessage ? "missingTextarea": undefined}
                   placeholder="Your message"
                   name="message"
                   onChange={(e) => {

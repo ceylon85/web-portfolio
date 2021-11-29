@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/Project.css";
-import { Zoom } from "react-reveal";
+import { Zoom } from "react-awesome-reveal";
 import ProjectCard from "./ProjectCard";
 import Covid19 from "./images/covid19.png";
 import Netflix from "./images/netflix.png";
